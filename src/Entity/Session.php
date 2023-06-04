@@ -55,6 +55,9 @@ class Session implements TimestampableInterface
     )]
     private Collection $messages;
 
+    #[ORM\Column(type: Types::JSON, length: 50)]
+    private array $variables;
+
     public function getStatus(): string
     {
         return $this->status;
@@ -123,6 +126,16 @@ class Session implements TimestampableInterface
     public function setMessages(Collection $messages): void
     {
         $this->messages = $messages;
+    }
+
+    public function getVariables(): array
+    {
+        return $this->variables;
+    }
+
+    public function setVariables(array $variables): void
+    {
+        $this->variables = $variables;
     }
 
     #[Pure]

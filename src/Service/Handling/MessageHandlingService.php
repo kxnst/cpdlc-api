@@ -51,6 +51,7 @@ class MessageHandlingService implements ContainerAwareInterface
         'setResponseField' => SetResponseFieldHandler::class,
         'responseSenderIdentifier' => EmptyHandler::class,
         'responseSessionIdentifier' => EmptyHandler::class,
+        'setSessionStatus' => SetSessionStatusHandler::class,
         'metaData' => EmptyHandler::class
     ];
 

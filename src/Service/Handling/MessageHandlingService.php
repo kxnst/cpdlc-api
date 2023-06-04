@@ -23,7 +23,6 @@ use App\Service\Handling\Handlers\RelatedMessageInitHandler;
 use App\Service\Handling\Handlers\RequiredHandler;
 use App\Service\Handling\Handlers\SessionInitHandler;
 use App\Service\Handling\Handlers\SetResponseFieldHandler;
-use App\Service\Handling\Handlers\SetSessionStatusHandler;
 use App\Service\Handling\Handlers\TypeHandler;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;

@@ -56,7 +56,7 @@ class Session implements TimestampableInterface
     private Collection $messages;
 
     #[ORM\Column(type: Types::JSON, length: 50)]
-    private array $variables;
+    private array $variables = [];
 
     public function getStatus(): string
     {
